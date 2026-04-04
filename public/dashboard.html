@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Of Supremacy · Dashboard</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/db65uctco/image/upload/v1775303853/HOS_favicon_mtql30.png">
+  <link rel="apple-touch-icon" href="https://res.cloudinary.com/db65uctco/image/upload/v1775303853/HOS_favicon_mtql30.png">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Home Of Supremacy">
+  <meta property="og:description" content="A discreet, immersive dungeon for private BDSM sessions and unforgettable fantasies.">
+  <meta property="og:image" content="https://res.cloudinary.com/db65uctco/image/upload/v1775303981/HOS_logo_nm8w6o.svg">
+  <meta property="og:url" content="https://homeofsupremacy.web.app">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Home Of Supremacy">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pages/dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <h1>H.O.S</h1>
+        <span>admin · dashboard</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">← Back to Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>booking dashboard</h2>
+      <p class="section-sub">all session requests — admin view</p>
+      
+      <div class="dashboard-controls">
+        <button id="refreshBtn" class="btn-small">↻ refresh data</button>
+      </div>
+      
+      <div class="table-container">
+        <table id="bookingsTable">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Preferred Location</th>
+              <th>Additional Request</th>
+              <th>Referral Code</th>
+              <th>Created At</th>
+            </tr>
+          </thead>
+          <tbody id="bookingsBody">
+            <tr>
+              <td colspan="6" style="text-align: center;">Loading bookings...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Home Of Supremacy — confidential admin dashboard</p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+</body>
+</html>

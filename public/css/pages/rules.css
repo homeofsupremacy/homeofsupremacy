@@ -1,0 +1,25 @@
+/* RULES.CSS - Rules page specific styles */
+
+.rules-list {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.rules-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.rules-list li i {
+  width: 24px;
+  color: var(--gray-600);
+}
+
+.rules-list li:last-child {
+  border-bottom: none;
+}

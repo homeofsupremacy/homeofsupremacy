@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Of Supremacy · Book a Session</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/db65uctco/image/upload/v1775303853/HOS_favicon_mtql30.png">
+  <link rel="apple-touch-icon" href="https://res.cloudinary.com/db65uctco/image/upload/v1775303853/HOS_favicon_mtql30.png">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Home Of Supremacy">
+  <meta property="og:description" content="A discreet, immersive dungeon for private BDSM sessions and unforgettable fantasies.">
+  <meta property="og:image" content="https://res.cloudinary.com/db65uctco/image/upload/v1775303981/HOS_logo_nm8w6o.svg">
+  <meta property="og:url" content="https://homeofsupremacy.web.app">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Home Of Supremacy">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pages/book.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <h1>H.O.S</h1>
+        <span>discrete · global · private</span>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#rules">Dungeon Rules</a></li>
+        <li><a href="index.html#rooms">Rooms</a></li>
+        <li><a href="book.html" class="active">Book a session</a></li>
+      </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>request a session</h2>
+      <p class="section-sub">Complete the form below. You will be contacted within 24hrs after submission.</p>
+      
+      <form id="bookingForm" class="booking-form">
+        <div class="form-group">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Preferred Location</label>
+          <input type="text" id="location" name="location" placeholder="e.g., South Africa, Japan, Patagonia">
+        </div>
+        
+        <div class="form-group">
+          <label for="request">Additional Request</label>
+          <textarea id="request" name="request" rows="3" placeholder="Special arrangements, accessibility, etc."></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="referral">Referral Code</label>
+          <input type="text" id="referral" name="referral" placeholder="HOS-DISCRETE">
+        </div>
+        
+        <button type="submit" class="btn-primary">submit session request</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Home Of Supremacy — discrete global hospitality. No public listings.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/base.js"></script>
+<script src="js/pages/book.js"></script>
+
+    <script type="text/javascript">
+  var Tawk_API = Tawk_API || {};
+  var Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script");
+    var s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/69eba7853a33741c34e9a95a/1jn08cpeu';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* DASHBOARD.CSS - Dashboard specific styles */
+
+.dashboard-controls {
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--gray-200);
+}
+
+#bookingsTable {
+  min-width: 800px;
+  width: 100%;
+}
+
+#bookingsTable td {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.75rem;
+}
+
+#bookingsTable th {
+  padding: 0.75rem;
+  background: var(--gray-100);
+  font-weight: 600;
+}
+
+.loading-row td {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray-500);
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+}
+
+.status-pending {
+  background: var(--gray-200);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+}
+
+.status-approved {
+  background: var(--black);
+  color: var(--white);
+}
+
+.status-completed {
+  background: var(--gray-100);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.status-cancelled {
+  background: var(--gray-200);
+  color: var(--gray-500);
+  text-decoration: line-through;
+}

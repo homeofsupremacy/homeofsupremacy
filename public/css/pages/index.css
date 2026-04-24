@@ -1,0 +1,343 @@
+/* INDEX.CSS - Homepage specific styles */
+
+/* Hero Section with Rotating Background Images */
+#home {
+  position: relative;
+  background-color: var(--gray-900);
+  color: var(--white);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 0 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.hero p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.hero .btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.hero .btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+  margin-top: 2rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+}
+
+.feature:hover {
+  background: rgba(0, 0, 0, 0.75);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.feature i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.feature h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.feature p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dungeon Rules Section */
+#rules {
+  background: var(--gray-100);
+  padding: 4rem 0;
+}
+
+#rules h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#rules .section-sub {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rules-category {
+  margin-bottom: 3rem;
+  background: var(--white);
+  padding: 2rem;
+  border: 1px solid var(--gray-200);
+}
+
+.rules-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--black);
+}
+
+.rules-category h3 i {
+  font-size: 1.3rem;
+}
+
+.rules-list {
+  list-style: none;
+}
+
+.rules-list li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rules-list li:last-child {
+  border-bottom: none;
+}
+
+.rules-list li i {
+  width: 24px;
+  margin-top: 2px;
+  color: var(--gray-600);
+  flex-shrink: 0;
+}
+
+.rules-list li strong {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.rules-footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-style: italic;
+}
+
+.rules-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Rooms Section - Grid Layout */
+#rooms {
+  padding: 4rem 0;
+}
+
+#rooms h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#rooms .section-sub {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.room-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+  filter: grayscale(100%);
+}
+
+.room-card:hover .room-image img {
+  transform: scale(1.05);
+}
+
+.room-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 1rem 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--black);
+  display: inline-block;
+}
+
+.room-card p {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  margin: 0 1rem 1.5rem;
+  line-height: 1.5;
+}
+
+/* Call to Action Buttons */
+.rooms-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.rooms-cta .btn-primary,
+.rooms-cta .btn-outline {
+  min-width: 180px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+  
+  .features {
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  .feature {
+    padding: 1.5rem;
+  }
+  
+  #rules, #rooms {
+    padding: 2rem 0;
+  }
+  
+  .rules-category {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .rules-category h3 {
+    font-size: 1.1rem;
+  }
+  
+  .rules-list li {
+    font-size: 0.8rem;
+    gap: 0.75rem;
+  }
+  
+  .rules-footer {
+    padding: 1.25rem;
+  }
+  
+  /* Rooms grid becomes single column on mobile */
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .room-image {
+    height: 200px;
+  }
+  
+  .room-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* CTA buttons stack on mobile */
+  .rooms-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .rooms-cta .btn-primary,
+  .rooms-cta .btn-outline {
+    width: 100%;
+    max-width: 250px;
+  }
+}
